@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SiteWeb-Gratuit | Hébergement web accessible</title>
+    <title>SiteWeb-Gratuit | Un site web simple, rapide et professionnel</title>
     <meta
       name="description"
-      content="Site web gratuit, simple et élégant pour présenter votre activité ou votre présence en ligne."
+      content="Créez un site web moderne, rapide et prêt à être publié grâce à une solution simple et accessible pour l'hébergement gratuit."
     />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,14 +21,15 @@
   <body>
     <header class="site-header">
       <div class="container nav">
-        <div class="brand">
+        <div class="brand" aria-label="SiteWeb-Gratuit">
           <span class="brand-mark">S</span>
           <span>SiteWeb-Gratuit</span>
         </div>
         <nav class="nav-links" aria-label="Navigation principale">
           <a href="#accueil">Accueil</a>
-          <a href="#avantages">Avantages</a>
-          <a href="#tarifs">Tarifs</a>
+          <a href="#solutions">Solutions</a>
+          <a href="#offres">Offres</a>
+          <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
         </nav>
         <a class="btn btn-primary" href="#contact">Démarrer</a>
@@ -37,20 +40,29 @@
       <section class="hero" id="accueil">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Hébergement web gratuit</p>
-            <h1>Un site web simple, rapide et prêt à être publié.</h1>
+            <span class="badge-hero">Nouveau • Hébergement web facile</span>
+            <h1>Donnez vie à votre présence en ligne sans complications.</h1>
             <p class="lead">
-              Créez votre présence en ligne sans frais de démarrage. Un rendu moderne,
-              professionnel et accessible sur tous les appareils.
+              Une solution claire pour lancer un site moderne, rapide et accessible,
+              avec un hébergement simple et sans gros coûts au départ.
             </p>
             <div class="cta-row">
-              <a class="btn btn-primary" href="#contact">Commencer maintenant</a>
-              <a class="btn btn-secondary" href="#avantages">Voir les avantages</a>
+              <a class="btn btn-primary" href="#offres">Voir les offres</a>
+              <a class="btn btn-secondary" href="#solutions">Découvrir</a>
             </div>
-            <ul class="hero-metrics">
-              <li><strong>100%</strong><span>gratuit</span></li>
-              <li><strong>24/7</strong><span>accessible</span></li>
-              <li><strong>Fast</strong><span>chargement</span></li>
+            <ul class="hero-metrics" aria-label="Statistiques clés">
+              <li>
+                <strong>100%</strong>
+                <span>gratuit</span>
+              </li>
+              <li>
+                <strong>24/7</strong>
+                <span>disponible</span>
+              </li>
+              <li>
+                <strong>Fast</strong>
+                <span>chargement</span>
+              </li>
             </ul>
           </div>
 
@@ -63,8 +75,9 @@
               </div>
               <div class="window-body">
                 <div class="stat-card stat-card-lg">
-                  <small>Visibilité</small>
+                  <small>Performance</small>
                   <strong>+82%</strong>
+                  <span>de visibilité</span>
                 </div>
                 <div class="mini-grid">
                   <div class="stat-card">
@@ -72,7 +85,7 @@
                     <strong>1.2s</strong>
                   </div>
                   <div class="stat-card accent">
-                    <small>Traffic</small>
+                    <small>Audience</small>
                     <strong>1.4k</strong>
                   </div>
                 </div>
@@ -82,43 +95,85 @@
         </div>
       </section>
 
-      <section class="features section" id="avantages">
+      <section class="features section" id="solutions">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Pourquoi nous</p>
-            <h2>Everything you need to launch</h2>
+            <p class="eyebrow">Pourquoi choisir SiteWeb-Gratuit</p>
+            <h2>Tout ce qu’il faut pour lancer une présence numérique solide.</h2>
           </div>
 
           <div class="features-grid">
             <article class="feature-card">
               <div class="icon">⚡</div>
               <h3>Rapide</h3>
-              <p>Un design léger et optimisé pour un chargement rapide sur mobile et desktop.</p>
+              <p>Un design léger et optimisé pour un chargement fluide sur mobile comme sur ordinateur.</p>
             </article>
             <article class="feature-card">
               <div class="icon">🔒</div>
               <h3>Fiable</h3>
-              <p>Une base solide pour présenter votre activité avec un rendu propre et professionnel.</p>
+              <p>Une base stable pensée pour présenter votre activité avec une image professionnelle.</p>
             </article>
             <article class="feature-card">
               <div class="icon">📱</div>
               <h3>Responsive</h3>
-              <p>Le site s’adapte automatiquement aux écrans smartphones, tablettes et ordinateurs.</p>
+              <p>Chaque écran s’adapte automatiquement pour offrir une expérience claire et agréable.</p>
             </article>
             <article class="feature-card">
               <div class="icon">💬</div>
               <h3>Simple</h3>
-              <p>Facile à modifier, personnaliser et mettre à jour selon vos besoins.</p>
+              <p>Modifiez les textes, les sections et le contenu sans contrainte technique importante.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="pricing section alt" id="tarifs">
+      <section class="showcase section alt">
+        <div class="container showcase-grid">
+          <div class="showcase-copy">
+            <p class="eyebrow">Une idée claire</p>
+            <h2>Votre projet mérite une présence web nette, moderne et crédible.</h2>
+            <p>
+              Nous mettons en place une base élégante pour présenter votre activité,
+              attirer des visiteurs et donner confiance à vos clients dès le premier contact.
+            </p>
+            <ul class="check-list">
+              <li>Page d’accueil optimisée</li>
+              <li>Sections de services et contact</li>
+              <li>Design moderne et professionnel</li>
+              <li>Prêt pour publication en ligne</li>
+            </ul>
+          </div>
+
+          <div class="showcase-card">
+            <div class="mini-panel">
+              <div class="mini-panel-header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="mini-panel-body">
+                <div class="mini-stat">
+                  <small>Visiteurs</small>
+                  <strong>2.8k</strong>
+                </div>
+                <div class="mini-bars" aria-label="Barres de performance">
+                  <span style="height: 35%"></span>
+                  <span style="height: 55%"></span>
+                  <span style="height: 70%"></span>
+                  <span style="height: 90%"></span>
+                  <span style="height: 100%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing section" id="offres">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Offre</p>
-            <h2>Des solutions adaptées à votre projet</h2>
+            <p class="eyebrow">Offres</p>
+            <h2>Des formules pensées pour démarrer sereinement.</h2>
           </div>
 
           <div class="pricing-grid">
@@ -128,7 +183,7 @@
               <ul>
                 <li>1 page d’accueil</li>
                 <li>Design moderne</li>
-                <li>Responsive</li>
+                <li>Responsive mobile</li>
                 <li>Hébergement gratuit</li>
               </ul>
               <a href="#contact" class="btn btn-secondary">Choisir</a>
@@ -136,48 +191,108 @@
 
             <article class="price-card featured">
               <span class="badge">Populaire</span>
-              <p class="plan">Business</p>
+              <p class="plan">Pro</p>
               <h3>Sur mesure</h3>
               <ul>
-                <li>Pages supplémentaires</li>
-                <li>Contact et formulaire</li>
+                <li>Plusieurs pages</li>
+                <li>Sections service/contact</li>
                 <li>Personnalisation avancée</li>
-                <li>Support conseillé</li>
+                <li>Support adapté</li>
               </ul>
               <a href="#contact" class="btn btn-primary">Demander</a>
+            </article>
+
+            <article class="price-card">
+              <p class="plan">Business</p>
+              <h3>Projet</h3>
+              <ul>
+                <li>Branding complet</li>
+                <li>Contenu structuré</li>
+                <li>Optimisation visuelle</li>
+                <li>Évolution du site</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary">Discuter</a>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="cta-strip">
-        <div class="container cta-strip-inner">
-          <div>
-            <p class="eyebrow">Prêt à lancer votre présence web ?</p>
-            <h2>Votre site peut être en ligne dès maintenant.</h2>
+      <section class="testimonials section alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Avis</p>
+            <h2>Ce que cela apporte concrètement au projet.</h2>
           </div>
-          <a class="btn btn-primary" href="#contact">Nous contacter</a>
+
+          <div class="testimonial-grid">
+            <blockquote class="testimonial-card">
+              “Le site a immédiatement donné une image plus professionnelle à notre activité.”
+              <footer>— Client • Portfolio</footer>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              “Très simple à utiliser et à faire évoluer. L’impression générale est nette et moderne.”
+              <footer>— Client • Service</footer>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              “J’ai pu présenter mon projet en ligne sans avoir à gérer une configuration complexe.”
+              <footer>— Client • Start-up</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq section" id="faq">
+        <div class="container faq-wrap">
+          <div class="section-heading left-align">
+            <p class="eyebrow">FAQ</p>
+            <h2>Questions fréquentes</h2>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <h3>Est-ce vraiment gratuit ?</h3>
+              <p>Oui, la base du projet est pensée pour un lancement simple avec coût minimal.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Peut-on personnaliser le design ?</h3>
+              <p>Oui, le code est facilement modifiable pour ajuster les couleurs, les textes et les sections.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Le site fonctionne sur mobile ?</h3>
+              <p>Oui, le layout est responsive pour offrir une navigation correcte sur smartphone, tablette et ordinateur.</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer" id="contact">
       <div class="container footer-grid">
-        <div>
+        <div class="footer-brand-block">
           <div class="brand">
             <span class="brand-mark">S</span>
             <span>SiteWeb-Gratuit</span>
           </div>
-          <p>Une solution simple pour rendre votre projet accessible sur le web.</p>
+          <p>Une présence web moderne et simple pour présenter votre projet avec sérieux.</p>
         </div>
 
-        <div>
+        <div class="footer-card">
           <h3>Contact</h3>
           <ul>
             <li>Email : contact@siteweb-gratuit.example</li>
             <li>WhatsApp : +33 6 00 00 00 00</li>
-            <li>Paris, France</li>
+            <li>Paris • France</li>
           </ul>
+        </div>
+
+        <div class="footer-card">
+          <h3>Planifier un projet</h3>
+          <form class="contact-form">
+            <input type="text" placeholder="Votre nom" aria-label="Nom" />
+            <input type="email" placeholder="Email" aria-label="Email" />
+            <textarea placeholder="Décrivez votre projet" aria-label="Projet"></textarea>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </form>
         </div>
       </div>
 
